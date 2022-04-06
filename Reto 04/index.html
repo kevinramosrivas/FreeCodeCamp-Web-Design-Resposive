@@ -34,37 +34,206 @@ Historia de Usuario #15: Mi página de Documentación Técnica debería usar al 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
     <nav id="navbar">
-        <header>
-            Bootstrap
-        </header>
+        <div id="navbar-header-container">
+            <header>
+                Bootstrap
+            </header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/602px-Bootstrap_logo.svg.png" alt="">
+        </div>
         <ul>
-            <li><a class="nav-link" href="#introduction">Introducción</a></li>
-            <li><a class="nav-link" href="#download">Descargar</a></li>
-            <li><a class="nav-link" href="#content">Contenido</a></li>
-            <li><a class="nav-link" href="#browser_and_devices">Navegadores y dispositivos</a></li>
-            <li><a class="nav-link" href="#accessibility">Accesibilidad</a></li>
+            <li><a class="nav-link" href="#Introducción">Introducción</a></li>
+            <li><a class="nav-link" href="#Descargar">Descargar</a></li>
+            <li><a class="nav-link" href="#Contenido">Contenido</a></li>
+            <li><a class="nav-link" href="#Navegadores_&_dispositivos">Navegadores & dispositivos</a></li>
+            <li><a class="nav-link" href="#Accesibilidad">Accesibilidad</a></li>
         </ul>
     </nav>
     <main id="main-doc">
-        <section class="main-section" id="introduction">
+        <section class="main-section" id="Introducción">
             <header>Introducción</header>
+            <article>
+                <p>Comience con Bootstrap, el marco de trabajo más popular del mundo para crear sitios adaptables para dispositivos móviles, con jsDelivr y una página de inicio de plantilla.</p>
+                <h2>Inicio rápido</h2>
+                <p>¿Está buscando agregar rápidamente Bootstrap a su proyecto? Use jsDelivr, un CDN gratuito de código abierto. ¿Utiliza un administrador de paquetes o necesita descargar los archivos fuente? Dirígete a la página de descargas .</p>
+                <h2>CSS</h2>
+                <p>Copie y pegue la hoja de estilo antes de su etiqueta head todas las demás hojas de estilo para cargar nuestro CSS.</p>
+                <code>&ltlink href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"&gt</code>
+                <h2>JS</h2>
+                <p>Muchos de nuestros componentes requieren el uso de JavaScript para funcionar. Específicamente, requieren nuestros propios complementos de JavaScript y Popper . Coloque una de las siguientes &ltscript&gt cerca del final de sus páginas, justo antes de la etiqueta de cierre &lt/body&gt, para habilitarlas.</p>
+                <p>Incluya cada complemento y dependencia de JavaScript de Bootstrap con uno de nuestros dos paquetes. Ambos bootstrap.bundle.jse bootstrap.bundle.min.jsincluyen Popper para nuestra información sobre herramientas y ventanas emergentes. Para obtener más información sobre lo que se incluye en Bootstrap, consulte nuestra sección de contenidos .</p>
+                <code>&ltscript src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">&lt/script&gt</code>
+                <h2>Bundle</h2>
+                <p>Incluya cada complemento y dependencia de JavaScript de Bootstrap con uno de nuestros dos paquetes. Ambos bootstrap.bundle.jse bootstrap.bundle.min.jsincluyen Popper para nuestra información sobre herramientas y ventanas emergentes. Para obtener más información sobre lo que se incluye en Bootstrap, consulte nuestra sección de contenidos .</p>
+                <code>&ltscript src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">&lt/script&gt</code>
+                <h2>Comunidad</h2>
+                <ul>
+                    <li>Lea y suscríbase al blog oficial de Bootstrap .</li>
+                    <li>Únete a la sala oficial de Slack .</li>
+                    <li>Chatea con compañeros Bootstrappers en IRC. En el irc.libera.chatservidor, en el #bootstrapcanal.</li>
+                    <li>La ayuda de implementación se puede encontrar en Stack Overflow (etiquetado bootstrap-5).</li>
+                    <li>Los desarrolladores deben usar la palabra clave bootstrapen los paquetes que modifican o agregan a la funcionalidad de Bootstrap cuando se distribuyen a través de npm o mecanismos de entrega similares para una máxima capacidad de descubrimiento.</li>
+                </ul>
+            </article>
         </section>
-        <section class="main-section" id="download">
+        <section class="main-section" id="Descargar">
             <header>Descargar</header>
-        </section>
-        <section class="main-section" id="content">
+            <article>
+                <p>Descargue Bootstrap para obtener el CSS y JavaScript compilados, el código fuente o inclúyalo con sus administradores de paquetes favoritos como npm, RubyGems y más.</p>
+                <br>
+                <h2>CSS y JS compilados</h2>
+                <p>Descargue el código compilado listo para usar para Bootstrap v5.1.3 para colocarlo fácilmente en su proyecto, que incluye:</p>
+                <ul>
+                    <li>Paquetes de CSS compilados y minificados (consulte la comparación de archivos CSS )</li>
+                    <li>Complementos de JavaScript compilados y minificados (consulte la comparación de archivos JS )</li>
+                </ul>
+                <br>
+                <p>Esto no incluye documentación, archivos fuente ni dependencias de JavaScript opcionales como Popper.</p>
+                <button><a href="https://github.com/twbs/bootstrap/releases/download/v5.1.3/bootstrap-5.1.3-dist.zip">Descargar</a></button>
+                <h2>Archivos fuente</h2>
+                <p>Compile Bootstrap con su propia canalización de activos descargando nuestros archivos fuente Sass, JavaScript y de documentación. Esta opción requiere algunas herramientas adicionales:</p>
+                <ul>
+                    <li>Compilador Sass para compilar archivos fuente Sass en archivos CSS</li>
+                    <li>Autoprefixer para el prefijo del proveedor de CSS</li>
+                </ul>
+                <br>
+                <p>Si necesita nuestro conjunto completo de herramientas de compilación , se incluyen para desarrollar Bootstrap y sus documentos, pero es probable que no sean adecuadas para sus propios fines.</p>
+                <button><a href="https://github.com/twbs/bootstrap/archive/v5.1.3.zip">Fuente de descarga</a></button>
+                <h2>Administradores de paquetes</h2>
+                <p>Incorpore los archivos fuente de Bootstrap a casi cualquier proyecto con algunos de los administradores de paquetes más populares. Independientemente del administrador de paquetes, Bootstrap requerirá un compilador Sass y Autoprefixer para una configuración que coincida con nuestras versiones compiladas oficiales.</p>
+                <h3>npm</h3>
+                <p>Instale Bootstrap en sus aplicaciones con tecnología de Node.js con el paquete npm :</p>
+                <code>$ npm install bootstrap</code>
+        <section class="main-section" id="Contenido">
             <header>Contenido</header>
+            <article>
+                <h2>Bootstrap precompilado</h2>
+                <p>Una vez descargado, descomprima la carpeta comprimida y verá algo como esto:</p>
+                <code>
+                    bootstrap/
+                    ├── css/
+                    │   ├── bootstrap-grid.css
+                    │   ├── bootstrap-grid.css.map
+                    │   ├── bootstrap-grid.min.css
+                    │   ├── bootstrap-grid.min.css.map
+                    │   ├── bootstrap-grid.rtl.css
+                    │   ├── bootstrap-grid.rtl.css.map
+                    │   ├── bootstrap-grid.rtl.min.css
+                    │   ├── bootstrap-grid.rtl.min.css.map
+                    │   ├── bootstrap-reboot.css
+                    │   ├── bootstrap-reboot.css.map
+                    │   ├── bootstrap-reboot.min.css
+                    │   ├── bootstrap-reboot.min.css.map
+                    │   ├── bootstrap-reboot.rtl.css
+                    │   ├── bootstrap-reboot.rtl.css.map
+                    │   ├── bootstrap-reboot.rtl.min.css
+                    │   ├── bootstrap-reboot.rtl.min.css.map
+                    │   ├── bootstrap-utilities.css
+                    │   ├── bootstrap-utilities.css.map
+                    │   ├── bootstrap-utilities.min.css
+                    │   ├── bootstrap-utilities.min.css.map
+                    │   ├── bootstrap-utilities.rtl.css
+                    │   ├── bootstrap-utilities.rtl.css.map
+                    │   ├── bootstrap-utilities.rtl.min.css
+                    │   ├── bootstrap-utilities.rtl.min.css.map
+                    │   ├── bootstrap.css
+                    │   ├── bootstrap.css.map
+                    │   ├── bootstrap.min.css
+                    │   ├── bootstrap.min.css.map
+                    │   ├── bootstrap.rtl.css
+                    │   ├── bootstrap.rtl.css.map
+                    │   ├── bootstrap.rtl.min.css
+                    │   └── bootstrap.rtl.min.css.map
+                    └── js/
+                        ├── bootstrap.bundle.js
+                        ├── bootstrap.bundle.js.map
+                        ├── bootstrap.bundle.min.js
+                        ├── bootstrap.bundle.min.js.map
+                        ├── bootstrap.esm.js
+                        ├── bootstrap.esm.js.map
+                        ├── bootstrap.esm.min.js
+                        ├── bootstrap.esm.min.js.map
+                        ├── bootstrap.js
+                        ├── bootstrap.js.map
+                        ├── bootstrap.min.js
+                        └── bootstrap.min.js.map
+                </code>
+                <p>Esta es la forma más básica de Bootstrap: archivos precompilados para un uso rápido en casi cualquier proyecto web. Proporcionamos CSS y JS compilados ( bootstrap.*), así como CSS y JS compilados y minimizados ( bootstrap.min.*). Los mapas de origen ( bootstrap.*.map) están disponibles para su uso con las herramientas de desarrollo de ciertos navegadores. Los archivos JS incluidos ( bootstrap.bundle.jsy minificados bootstrap.bundle.min.js) incluyen Popper .</p>
+                <br>
+                <h2>Código fuente de Bootstrap</h2>
+                <p>La descarga del código fuente de Bootstrap incluye los activos CSS y JavaScript precompilados, junto con Sass fuente, JavaScript y documentación. Más específicamente, incluye lo siguiente y más:</p>
+                <code>
+                    bootstrap/
+                    ├── dist/
+                    │   ├── css/
+                    │   └── js/
+                    ├── site/
+                    │   └──content/
+                    │      └── docs/
+                    │          └── 5.1/
+                    │              └── examples/
+                    ├── js/
+                    └── scss/
+                </code>
+            </article>
         </section>
-        <section class="main-section" id="browser_and_devices">
-            <header>Navegadores y dispositivos</header>
+        <section class="main-section" id="Navegadores_&_dispositivos">
+            <header>Navegadores & dispositivos</header>
+            <article>
+                <p>Obtenga información sobre los navegadores y dispositivos, desde modernos hasta antiguos, que son compatibles con Bootstrap, incluidas las peculiaridades y los errores conocidos de cada uno.</p>
+                <h2>Navegadores compatibles</h2>
+                <p>Bootstrap es compatible con las últimas versiones estables de todos los principales navegadores y plataformas.
+
+                    Los navegadores alternativos que utilizan la última versión de WebKit, Blink o Gecko, ya sea directamente o mediante la API de vista web de la plataforma, no son compatibles explícitamente. Sin embargo, Bootstrap debería (en la mayoría de los casos) mostrarse y funcionar correctamente en estos navegadores también. A continuación se proporciona información de soporte más específica.
+                    
+                    Puede encontrar nuestra gama de navegadores admitidos y sus versiones en nuestro.browserslistrc file :</p>
+                <code># https://github.com/browserslist/browserslist#readme
+
+                    >= 0.5%
+                    last 2 major versions
+                    not dead
+                    Chrome >= 60
+                    Firefox >= 60
+                    Firefox ESR
+                    iOS >= 12
+                    Safari >= 12
+                    not Explorer &lt= 11</code>
+                    <p>Usamos Autoprefixer para manejar la compatibilidad prevista del navegador a través de prefijos CSS, que usa Browserslist para administrar estas versiones del navegador. Consulte su documentación para saber cómo integrar estas herramientas en sus proyectos.</p>
+
+            </article>
         </section>
-        <section class="main-section" id="accessibility">
+        <section class="main-section" id="Accesibilidad">
             <header>Accesibilidad</header>
-        </section>
+            <article>
+                <p>Una breve descripción de las características y limitaciones de Bootstrap para la creación de contenido accesible.</p>
+                <p>Bootstrap proporciona un marco fácil de usar de estilos listos para usar, herramientas de diseño y componentes interactivos, lo que permite a los desarrolladores crear sitios web y aplicaciones visualmente atractivos, funcionalmente ricos y accesibles desde el primer momento.</p>
+                <h2>Resumen y limitaciones</h2>
+                <p>La accesibilidad general de cualquier proyecto creado con Bootstrap depende en gran medida del marcado del autor, el estilo adicional y las secuencias de comandos que hayan incluido. Sin embargo, siempre que se hayan implementado correctamente, debería ser perfectamente posible crear sitios web y aplicaciones con Bootstrap que cumplan con WCAG 2.1 (A/AA/AAA), Sección 508 y requisitos y estándares de accesibilidad similares.</p>
+                <h2>marcado estructural</h2>
+                <p>El estilo y el diseño de Bootstrap se pueden aplicar a una amplia gama de estructuras de marcado. Esta documentación tiene como objetivo proporcionar a los desarrolladores ejemplos de mejores prácticas para demostrar el uso de Bootstrap e ilustrar el marcado semántico apropiado, incluidas las formas en que se pueden abordar los posibles problemas de accesibilidad.</p>
+                <h2>Componentes interactivos</h2>
+                <p>Los componentes interactivos de Bootstrap, como los cuadros de diálogo modales, los menús desplegables y la información sobre herramientas personalizada, están diseñados para funcionar con usuarios táctiles, de mouse y de teclado. Mediante el uso de funciones y atributos relevantes de WAI - ARIA , estos componentes también deben ser comprensibles y operables mediante tecnologías de asistencia (como lectores de pantalla).
+
+                    Debido a que los componentes de Bootstrap están diseñados a propósito para ser bastante genéricos, es posible que los autores deban incluir más funciones y atributos de ARIA , así como el comportamiento de JavaScript, para transmitir con mayor precisión la naturaleza y la funcionalidad precisas de su componente. Esto generalmente se indica en la documentación.</p>
+                <h2>Contraste de color</h2>  
+                <p>Algunas combinaciones de colores que actualmente conforman la paleta predeterminada de Bootstrap, que se utilizan en todo el marco para cosas como variaciones de botones, variaciones de alertas, indicadores de validación de formularios, pueden dar lugar a un contraste de color insuficiente (por debajo de la relación de contraste de color de texto recomendada por WCAG 2.1 de 4,5:1). y la relación de contraste de color sin texto WCAG 2.1 de 3:1 ), especialmente cuando se usa contra un fondo claro. Se alienta a los autores a probar sus usos específicos del color y, cuando sea necesario, modificar/ampliar manualmente estos colores predeterminados para garantizar proporciones de contraste de color adecuadas.</p>
+                <h2>Contenido oculto visualmente</h2>
+                <p>El contenido que debe ocultarse visualmente, pero permanecer accesible para las tecnologías de asistencia, como los lectores de pantalla, se puede diseñar usando la .visually-hiddenclase. Esto puede ser útil en situaciones en las que también es necesario transmitir información o pistas visuales adicionales (como el significado denotado mediante el uso de colores) a usuarios no visuales.</p>
+                <code>&ltp class="text-danger">
+                    &ltspan class="visually-hidden">Danger: &lt/span>
+                    This action is not reversible
+                  &lt/p&gt</code>
+                <br>
+                <p>Para controles interactivos visualmente ocultos, como los enlaces tradicionales de "saltar", use la .visually-hidden-focusableclase. Esto asegurará que el control sea visible una vez enfocado (para usuarios de teclado videntes). Tenga cuidado, en comparación con el equivalente .sr-onlyy las .sr-only-focusableclases en versiones anteriores, Bootstrap 5 .visually-hidden-focusablees una clase independiente y no debe usarse en combinación con la .visually-hiddenclase.</p>
+                <code>&lta class="visually-hidden-focusable" href="#content">Skip to main content&lt/a&gt</code>
+                <h2>Movimiento reducido</h2>
+                <p>Bootstrap incluye soporte para la prefers-reduced-motionfunción multimedia . En los navegadores/entornos que permiten al usuario especificar su preferencia por el movimiento reducido, la mayoría de los efectos de transición CSS en Bootstrap (por ejemplo, cuando se abre o cierra un cuadro de diálogo modal, o la animación deslizante en carruseles) se desactivarán y las animaciones significativas ( como los hilanderos) se ralentizarán.
+
+                    En los navegadores que admiten prefers-reduced-motiony donde el usuario no ha señalado explícitamente que preferiría un movimiento reducido (es decir, donde prefers-reduced-motion: no-preference), Bootstrap permite un desplazamiento suave utilizando la scroll-behaviorpropiedad.</p>
     </main>
 </body>
 </html>
